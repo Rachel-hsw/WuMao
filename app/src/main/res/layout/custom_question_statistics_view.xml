@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:layout_gravity="center_horizontal" android:id="@id/text_custom_question_statistics_title_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/question_detail_total_wrong" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/activity_color" android:gravity="center" android:id="@id/text_custom_question_statistics_total_wrong" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ImageView android:background="#ffd3d3d3" android:layout_width="1.0dip" android:layout_height="fill_parent" android:contentDescription="@string/app_name" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:layout_gravity="center_horizontal" android:id="@id/text_custom_question_statistics_title_middle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/question_detail_my_wrong" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffff0000" android:gravity="center" android:id="@id/text_custom_question_statistics_my_wrong" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ImageView android:background="#ffd3d3d3" android:layout_width="1.0dip" android:layout_height="fill_parent" android:contentDescription="@string/app_name" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:layout_gravity="center_horizontal" android:id="@id/text_custom_question_statistics_title_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/question_detail_master" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/image_custom_question_statistics_master1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/app_name" />
+            <ImageView android:id="@id/image_custom_question_statistics_master2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/app_name" />
+            <ImageView android:id="@id/image_custom_question_statistics_master3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/app_name" />
+            <ImageView android:id="@id/image_custom_question_statistics_master4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/app_name" />
+            <ImageView android:id="@id/image_custom_question_statistics_master5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/app_name" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.6">
+        <ImageView android:background="@drawable/rank1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.6">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:background="@drawable/image_avatar_wait_for_load" android:layout_width="54.0dip" android:layout_height="54.0dip" />
+            <TextView android:textSize="10.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="河南学员 " />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="17.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100分" />
+            <TextView android:textSize="17.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="20分钟 " />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

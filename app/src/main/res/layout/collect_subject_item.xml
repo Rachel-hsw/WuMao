@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:f="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:app1="http://schemas.android.com/apk/res/com.withustudy.koudaizikao">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true">
+                <TextView android:textColor="#ffcacaca" android:id="@id/subject_tv_time" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2015年8月1号" />
+                <ImageView android:id="@id/edit_iv" android:background="@drawable/unchek_error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true">
+                <TextView android:textColor="#ff00b8e6" android:id="@id/tv_sn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3.1.1" />
+                <TextView android:textColor="#ff00b8e6" android:id="@id/tv_name1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="中国近代史纲要" />
+                <TextView android:textColor="#ffcacaca" android:id="@id/subject_tv_edit_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="2015年8月1号" android:layout_alignParentRight="true" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/excer_typeLabel" android:background="@drawable/bg_detail_single_label_selector" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="单选" />
+            <TextView android:textColor="#ff565656" android:id="@id/excer_stem" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="洋务运动的主要领导人是谁?" android:layout_alignParentRight="true" />
+            <com.example.test.FlowLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/collect_fl_stem" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" app:layoutDirection="ltr" app:debugDraw="true" app:weightDefault="0.5" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

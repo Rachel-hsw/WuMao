@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ptr="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/activity_color" android:layout_width="fill_parent" android:layout_height="@dimen/activity_title">
+        <Button android:id="@id/button_bbs_all_section_back" android:background="@null" android:layout_width="40.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_side" android:drawableLeft="@drawable/bt_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_title" android:textColor="#ffffffff" android:id="@id/text_bbs_all_section_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ImageView android:background="@drawable/all_section_location" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/text_bbs_all_section_title" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/listview_bbs_all_section" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:divider="@null" android:layout_weight="1.0" ptr:ptrHeaderBackground="#ffffffff" ptr:ptrHeaderTextColor="#ff999999" ptr:ptrDrawable="@drawable/pull_to_fresh" />
+</LinearLayout>

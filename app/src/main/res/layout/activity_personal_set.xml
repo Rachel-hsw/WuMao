@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/activity_color" android:layout_width="fill_parent" android:layout_height="@dimen/activity_title">
+        <Button android:id="@id/button_personal_set_back" android:background="@null" android:layout_width="40.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_side" android:drawableLeft="@drawable/bt_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_title" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/personal_set" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_personal_set_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/layout_personal_set" android:layout_width="77.0dip" android:layout_height="77.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+                    <ImageView android:id="@id/image_personal_set_avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/image_avatar_wait_for_load" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+                    <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/personal_set_avatar" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+                <TextView android:textSize="17.0sp" android:textColor="@color/activity_color" android:id="@id/text_personal_set_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/layout_personal_set" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <ImageView android:background="#fff7f8f8" android:layout_width="fill_parent" android:layout_height="10.0dip" android:contentDescription="@string/app_name" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/personalitemview_set_nickname" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="11.0dip" android:layout_height="13.0dip" android:layout_marginLeft="12.0dip" android:src="@drawable/personal_set_nickname" android:contentDescription="@string/app_name" />
+                <TextView android:textSize="17.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_side" android:text="@string/personal_nickname" />
+                <TextView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <ImageView android:layout_width="7.0dip" android:layout_height="12.0dip" android:layout_marginRight="@dimen/screen_side" android:src="@drawable/personal_arrow" android:contentDescription="@string/app_name" />
+            </LinearLayout>
+            <ImageView android:background="#fff7f8f8" android:layout_width="fill_parent" android:layout_height="10.0dip" android:contentDescription="@string/app_name" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/personalitemview_set_phone" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="11.0dip" android:layout_height="16.0dip" android:layout_marginLeft="12.0dip" android:src="@drawable/personal_phone" android:contentDescription="@string/app_name" />
+                <TextView android:textSize="17.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_side" android:text="@string/personal_phone" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:gravity="right" android:id="@id/text_personal_set_photo" android:paddingRight="@dimen/screen_side" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            </LinearLayout>
+            <ImageView android:background="#fff7f8f8" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:contentDescription="@string/app_name" />
+            <RelativeLayout android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/image_personal_set_sex" android:background="@drawable/personal_set_sex" android:layout_width="14.0dip" android:layout_height="13.0dip" android:layout_marginLeft="@dimen/screen_side" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+                <TextView android:textSize="17.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_side" android:text="@string/personal_set_sex" android:layout_toRightOf="@id/image_personal_set_sex" android:layout_centerVertical="true" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <LinearLayout android:orientation="vertical" android:layout_width="180.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/screen_side">
+                        <ImageView android:background="@color/activity_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:contentDescription="@string/app_name" />
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:background="@color/activity_color" android:layout_width="1.0dip" android:layout_height="fill_parent" android:contentDescription="@string/app_name" />
+                            <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:gravity="center" android:id="@id/text_personal_set_sex_male" android:background="#ffffffff" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/personal_set_sex_male" android:layout_weight="1.0" />
+                            <ImageView android:background="@color/activity_color" android:layout_width="1.0dip" android:layout_height="fill_parent" android:contentDescription="@string/app_name" />
+                            <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:gravity="center" android:id="@id/text_personal_set_sex_female" android:background="#ffffffff" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/personal_set_sex_female" android:layout_weight="1.0" />
+                            <ImageView android:background="@color/activity_color" android:layout_width="1.0dip" android:layout_height="fill_parent" android:contentDescription="@string/app_name" />
+                            <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:gravity="center" android:id="@id/text_personal_set_sex_nothing" android:background="#ffffffff" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/personal_set_sex_nothing" android:layout_weight="1.0" />
+                            <ImageView android:background="@color/activity_color" android:layout_width="1.0dip" android:layout_height="fill_parent" android:contentDescription="@string/app_name" />
+                        </LinearLayout>
+                        <ImageView android:background="@color/activity_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:contentDescription="@string/app_name" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <ImageView android:background="#fff7f8f8" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:contentDescription="@string/app_name" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/personalitemview_set_password" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="13.0dip" android:layout_height="15.0dip" android:layout_marginLeft="12.0dip" android:src="@drawable/personal_set_password" android:contentDescription="@string/app_name" />
+                <TextView android:textSize="17.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_side" android:text="@string/personal_set_password" />
+                <TextView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <ImageView android:layout_width="7.0dip" android:layout_height="12.0dip" android:layout_marginRight="@dimen/screen_side" android:src="@drawable/personal_arrow" android:contentDescription="@string/app_name" />
+            </LinearLayout>
+            <ImageView android:background="#fff7f8f8" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:contentDescription="@string/app_name" />
+            <ImageView android:background="#fff7f8f8" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="10.0dip" android:contentDescription="@string/app_name" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/personalitemview_set_weixin" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="13.0dip" android:layout_height="15.0dip" android:layout_marginLeft="12.0dip" android:src="@drawable/personal_weixin" android:contentDescription="@string/app_name" />
+                <TextView android:textSize="17.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_side" android:text="@string/personal_set_weixin" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:gravity="right" android:id="@id/text_personal_set_weixin" android:paddingRight="@dimen/screen_side" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="未绑定" android:layout_weight="1.0" />
+                <ImageView android:layout_width="7.0dip" android:layout_height="12.0dip" android:layout_marginRight="@dimen/screen_side" android:src="@drawable/personal_arrow" android:contentDescription="@string/app_name" />
+            </LinearLayout>
+            <ImageView android:background="#fff7f8f8" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:contentDescription="@string/app_name" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/personalitemview_set_weibo" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="13.0dip" android:layout_height="12.0dip" android:layout_marginLeft="12.0dip" android:src="@drawable/personal_weibo" android:contentDescription="@string/app_name" />
+                <TextView android:textSize="17.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_side" android:text="@string/personal_set_weibo" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:gravity="right" android:id="@id/text_personal_set_weibo" android:paddingRight="@dimen/screen_side" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="未绑定" android:layout_weight="1.0" />
+                <ImageView android:layout_width="7.0dip" android:layout_height="12.0dip" android:layout_marginRight="@dimen/screen_side" android:src="@drawable/personal_arrow" android:contentDescription="@string/app_name" />
+            </LinearLayout>
+            <ImageView android:background="#fff7f8f8" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:contentDescription="@string/app_name" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/personalitemview_set_qq" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginLeft="12.0dip" android:src="@drawable/personal_qq" android:contentDescription="@string/app_name" />
+                <TextView android:textSize="17.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_side" android:text="@string/personal_set_qq" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:gravity="right" android:id="@id/text_personal_set_qq" android:paddingRight="@dimen/screen_side" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="未绑定" android:layout_weight="1.0" />
+                <ImageView android:layout_width="7.0dip" android:layout_height="12.0dip" android:layout_marginRight="@dimen/screen_side" android:src="@drawable/personal_arrow" android:contentDescription="@string/app_name" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.withustudy.koudaizikao.custom.LoadingView android:id="@id/loading_personal_set" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

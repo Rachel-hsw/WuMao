@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="indicator_right_padding">10.0dip</dimen>
+    <dimen name="indicator_corner_radius">12.0dip</dimen>
+    <dimen name="indicator_internal_padding">4.0dip</dimen>
+    <dimen name="header_footer_left_right_padding">24.0dip</dimen>
+    <dimen name="header_footer_top_bottom_padding">12.0dip</dimen>
+    <dimen name="blue_dot_left">4.0dip</dimen>
+    <dimen name="blue_dot_right">4.0dip</dimen>
+    <dimen name="blue_dot_top">0.0dip</dimen>
+    <dimen name="blue_dot_bottom">6.0dip</dimen>
+    <dimen name="activity_title">44.0dip</dimen>
+    <dimen name="text_line">6.0dip</dimen>
+    <dimen name="screen_side">12.0dip</dimen>
+    <dimen name="text_title">20.0sp</dimen>
+    <dimen name="alphabet_size">12.0dip</dimen>
+    <dimen name="umeng_socialize_pad_window_height">350.0dip</dimen>
+    <dimen name="umeng_socialize_pad_window_width">580.0dip</dimen>
+</resources>

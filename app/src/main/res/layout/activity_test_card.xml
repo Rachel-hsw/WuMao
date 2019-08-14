@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/activity_color" android:layout_width="fill_parent" android:layout_height="@dimen/activity_title">
+        <ImageButton android:id="@id/simula_detail_back" android:background="@drawable/bt_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_side" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/hand_test_paper_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip">
+                <ImageView android:background="@drawable/test_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="交卷" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/preview_have_done_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip">
+                <ImageView android:background="@drawable/test_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1/100" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip">
+                <ImageView android:background="@drawable/test_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="45:10" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="30.0dip">
+        <ImageButton android:background="@drawable/test_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已答:" />
+        <TextView android:textColor="#ff259b24" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="6道" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="未答:" />
+        <TextView android:textColor="#ff259b24" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="94道" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="耗时:" />
+        <TextView android:textColor="#ff555555" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5分24秒" />
+    </LinearLayout>
+    <GridView android:id="@id/simu_card_gv" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <Button android:textColor="@color/white" android:id="@id/go_first_brush_btn" android:background="@drawable/bg_btn_reset_excercise" android:layout_width="80.0dip" android:layout_height="25.0dip" android:text="继续答题" />
+        <Button android:textColor="@color/white" android:id="@id/go_last_brush_btn" android:background="@drawable/bg_btn_goon_excercise" android:layout_width="80.0dip" android:layout_height="25.0dip" android:layout_marginLeft="5.0dip" android:text="果断交卷" />
+    </LinearLayout>
+</LinearLayout>

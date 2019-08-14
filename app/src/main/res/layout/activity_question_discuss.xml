@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ptr="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/activity_color" android:layout_width="fill_parent" android:layout_height="@dimen/activity_title">
+        <Button android:id="@id/button_question_discuss_back" android:background="@drawable/bt_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_side" />
+        <TextView android:textSize="@dimen/text_title" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/question_detail_discuss" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/text_question_discuss_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+    </LinearLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/listview_question_discuss" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:divider="@null" android:layout_weight="1.0" ptr:ptrHeaderBackground="#ffffffff" ptr:ptrHeaderTextColor="#ff999999" ptr:ptrDrawable="@drawable/pull_to_fresh" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#ffd3d3d3" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <EditText android:textSize="15.0sp" android:id="@id/edit_question_discuss" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:hint="@string/question_detail_discuss_content" android:layout_weight="1.0" />
+        <Button android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/button_question_discuss" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/information_detail_publish" />
+    </LinearLayout>
+</LinearLayout>

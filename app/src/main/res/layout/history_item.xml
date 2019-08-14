@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="#fff8f8f8" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.6">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="20.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff00b8e6" android:id="@id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="2015.8.1" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.2">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/mock_duan_line" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:background="@drawable/hitory_point" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:layout_gravity="center_horizontal" android:background="#ff00b8e6" android:layout_width="2.0px" android:layout_height="0.0dip" android:layout_marginTop="2.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0">
+            <LinearLayout android:background="#fff8f8f8" android:layout_width="fill_parent" android:layout_height="20.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="50.0sp" android:textColor="#fff45859" android:id="@id/tv_fen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="50" />
+                    <TextView android:textSize="15.0sp" android:textColor="#fff45859" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="分" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="6.0dip" android:layout_height="wrap_content" />
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:background="@drawable/simu_history_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="15.0sp" android:textColor="#fff45859" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="tv_time" />
+                </LinearLayout>
+                <ImageView android:background="#fff8f8f8" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.1" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/style_contanier_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <LinearLayout android:id="@id/ll_single" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="15.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="单选:" />
+                        <TextView android:textSize="17.0sp" android:textColor="#ff808080" android:id="@id/tv_single" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="24/25" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="6.0dip" android:layout_height="wrap_content" />
+                    <LinearLayout android:id="@id/ll_mulicat" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="15.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="多选:" />
+                        <TextView android:textSize="17.0sp" android:textColor="#ff808080" android:id="@id/tv_mulicate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="99/100" />
+                    </LinearLayout>
+                    <ImageView android:background="#fff8f8f8" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.1" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <LinearLayout android:id="@id/ll_reading" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="17.0sp" android:textColor="#ff808080" android:id="@id/tv_yuedu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="24/25" />
+                        <TextView android:textSize="15.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="阅读:" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="6.0dip" android:layout_height="wrap_content" />
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/ll_artile" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="15.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="作文:" />
+                        <TextView android:textSize="17.0sp" android:textColor="#ff808080" android:id="@id/tv_article" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="99/100" />
+                    </LinearLayout>
+                    <ImageView android:background="#fff8f8f8" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.1" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

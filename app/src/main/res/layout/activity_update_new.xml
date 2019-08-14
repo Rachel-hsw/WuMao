@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_dialog_update_new_main" android:background="@drawable/bg_update" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:background="@drawable/new_vistion" android:layout_width="100.0dip" android:layout_height="70.0dip" android:contentDescription="@string/app_name" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/activity_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/personal_update_new" />
+    </LinearLayout>
+    <TextView android:textSize="15.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/personal_update_content_new" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_dialog_update_new_content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="5.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/button_dialog_update_new_cancel" android:background="@drawable/do_not_update" android:layout_width="111.0dip" android:layout_height="32.0dip" android:text="@string/personal_update_cancel" />
+        <TextView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/button_dialog_update_new_sure" android:background="@drawable/do_update" android:layout_width="111.0dip" android:layout_height="32.0dip" android:text="@string/personal_update_sure" />
+    </LinearLayout>
+</LinearLayout>

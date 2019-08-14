@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/activity_color" android:layout_width="fill_parent" android:layout_height="@dimen/activity_title">
+        <Button android:id="@id/button_favorite_back" android:background="@null" android:layout_width="40.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_side" android:drawableLeft="@drawable/bt_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_title" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/favorite_title" android:layout_toRightOf="@id/button_favorite_back" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <Button android:textSize="16.0dip" android:textColor="#ff999999" android:gravity="center" android:id="@id/button_favorite_title1" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/favorite_pro" android:layout_weight="1.0" />
+        <Button android:textSize="16.0dip" android:textColor="#ff999999" android:gravity="center" android:id="@id/button_favorite_title2" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/main_tab2" android:layout_weight="1.0" />
+        <Button android:textSize="16.0dip" android:textColor="#ff999999" android:gravity="center" android:id="@id/button_favorite_title3" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/favorite_forum" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/image_favorite_title1" android:background="#ffffffff" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_weight="1.0" android:contentDescription="@string/app_name" />
+        <ImageView android:id="@id/image_favorite_title2" android:background="#ffffffff" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_weight="1.0" android:contentDescription="@string/app_name" />
+        <ImageView android:id="@id/image_favorite_title3" android:background="#ffffffff" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_weight="1.0" android:contentDescription="@string/app_name" />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager android:id="@id/viewpager_favorite" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

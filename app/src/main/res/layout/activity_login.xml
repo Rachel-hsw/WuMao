@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/activity_color" android:layout_width="fill_parent" android:layout_height="@dimen/activity_title">
+        <Button android:gravity="center_vertical" android:id="@id/button_login_back" android:background="@null" android:layout_width="30.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/screen_side" android:drawableLeft="@drawable/bt_back" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="@dimen/text_title" android:textColor="@color/white" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/skip_login" android:layout_toRightOf="@id/button_login_back" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ScrollView android:id="@id/scroll_login" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/layout_login_fragment_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+                <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_side" android:layout_marginRight="30.0dip" android:src="@drawable/login_divier" android:layout_weight="1.0" android:contentDescription="@string/app_name" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/skip_disanfang" />
+                <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="@dimen/screen_side" android:src="@drawable/login_divier" android:layout_weight="1.0" android:contentDescription="@string/app_name" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="无需手机号，一键快速绑定登录" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginBottom="37.0dip">
+                <TextView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <ImageButton android:id="@id/weibo_ib" android:background="@drawable/login_weibo" android:layout_width="42.0dip" android:layout_height="34.0dip" android:contentDescription="@string/app_name" />
+                <TextView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <ImageButton android:id="@id/qq_ib" android:background="@drawable/login_qq" android:layout_width="32.0dip" android:layout_height="34.0dip" android:layout_marginLeft="20.0dip" android:contentDescription="@string/app_name" />
+                <TextView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <ImageButton android:id="@id/weixin_ib" android:background="@drawable/login_weixin" android:layout_width="41.0dip" android:layout_height="34.0dip" android:layout_marginLeft="20.0dip" android:contentDescription="@string/app_name" />
+                <TextView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

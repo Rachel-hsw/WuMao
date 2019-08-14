@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ListView android:id="@id/listview_favorite" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_no_data" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:background="@drawable/no_collect" android:layout_width="155.0dip" android:layout_height="155.0dip" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="还米有收藏。。。" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="15.0sp" android:textColor="@color/activity_color" android:id="@id/text_item_favorite1_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffdcdcdc" android:id="@id/text_item_favorite1_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/text_item_favorite1_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff66cdaa" android:id="@id/text_item_favorite1_type" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:background="#ffdcdcdc" android:layout_width="fill_parent" android:layout_height="5.0dip" android:contentDescription="@string/app_name" />
+</LinearLayout>

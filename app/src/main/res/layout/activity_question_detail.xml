@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/simulation_test_excersice_detail_title_ll_t" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title1" android:background="@color/activity_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/activity_title">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/question_detail_back_ll" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerVertical="true">
+            <ImageView android:background="@drawable/bt_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" />
+            <TextView android:textSize="@dimen/text_title" android:textColor="@color/white" android:ellipsize="end" android:id="@id/qus_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="10" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <LinearLayout android:orientation="vertical" android:id="@id/question_ll_explain" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/simu_detail_iv" android:background="@drawable/btn_explain_selector" android:layout_width="19.0dip" android:layout_height="21.0dip" android:layout_marginRight="14.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/question_ll_collect" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_collect_excer" android:background="@drawable/btn_collect_selector" android:layout_width="21.0dip" android:layout_height="21.0dip" android:layout_marginRight="14.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/question_ll_share" android:layout_width="21.0dip" android:layout_height="21.0dip" android:layout_marginRight="12.0dip">
+                <ImageView android:background="@drawable/bt_share" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/title2" android:background="@color/activity_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/activity_title">
+        <LinearLayout android:id="@id/simula_detail_back_ll" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerVertical="true">
+            <ImageView android:background="@drawable/bt_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/hand_test_paper_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18.0dip">
+                <ImageView android:id="@id/hand_test_paper_ll_iv" android:background="@drawable/hand_card" android:layout_width="10.5dip" android:layout_height="21.0dip" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/white" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="交卷" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/preview_have_done_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18.0dip">
+                <ImageView android:id="@id/preview_have_done_ll_iv" android:background="@drawable/test_card_pre" android:layout_width="21.0dip" android:layout_height="21.0dip" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/white" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1/100" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip">
+                <ImageView android:id="@id/simu_detail_share" android:background="@drawable/test_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/time_counter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="45:00" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager android:id="@id/viewpager_question_detail" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

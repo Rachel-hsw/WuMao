@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#fff6f6f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:zhy="http://schemas.android.com/apk/res/com.withustudy.koudaizikao">
+    <RelativeLayout android:gravity="center_vertical" android:background="@color/activity_color" android:layout_width="fill_parent" android:layout_height="@dimen/activity_title">
+        <LinearLayout android:gravity="center" android:id="@id/simu_init_back_ll" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+            <ImageButton android:background="@drawable/bt_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_title" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="模拟考试" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/userImag" android:layout_width="77.5dip" android:layout_height="77.5dip" android:layout_marginTop="10.0dip" android:src="@drawable/image_avatar_wait_for_load" android:layout_centerInParent="true" />
+    <TextView android:textSize="16.0sp" android:textColor="#ff00b8e4" android:id="@id/examinee_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="张三丰" android:layout_centerHorizontal="true" />
+    <ImageView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_marginTop="5.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="19.5dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="18.0sp" android:textColor="#ff666666" android:id="@id/subject_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="中国近代史" android:layout_centerHorizontal="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="13.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="分数" android:layout_centerHorizontal="true" />
+            <ImageView android:background="@drawable/simu_test_count" android:layout_width="41.0dip" android:layout_height="46.0dip" android:layout_marginTop="16.5dip" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff00b8e4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="100分" android:layout_centerHorizontal="true" />
+        </LinearLayout>
+        <ImageView android:background="#ffe1e1e1" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="13.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="时间" android:layout_centerHorizontal="true" />
+            <ImageView android:background="@drawable/simu_time" android:layout_width="46.0dip" android:layout_height="46.0dip" android:layout_marginTop="16.5dip" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff00b8e4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="120分钟" android:layout_centerHorizontal="true" />
+        </LinearLayout>
+        <ImageView android:background="#ffe1e1e1" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="13.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="合格" android:layout_centerHorizontal="true" />
+            <ImageView android:background="@drawable/simu_jige" android:layout_width="38.0dip" android:layout_height="46.0dip" android:layout_marginTop="16.5dip" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff00b8e4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="65分" android:layout_centerHorizontal="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_marginTop="5.0dip" />
+    <TextView android:textSize="15.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="模考难度" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/bg_ll" android:background="@drawable/simu_frame_cycle" android:layout_width="334.0dip" android:layout_height="40.0dip" android:layout_marginTop="15.0dip">
+        <Button android:textColor="#ff00b8e6" android:id="@id/simulation_low_level_btn" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="低" android:layout_weight="1.0" />
+        <Button android:textColor="@color/white" android:id="@id/simulation_medium_level_btn" android:background="@drawable/bg_btn_level_excercise" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="中" android:layout_weight="1.0" />
+        <Button android:textColor="#ff00b8e6" android:id="@id/simulation_high_level_btn" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="高" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:id="@id/start_simulation_btn" android:background="@drawable/simu_start" android:layout_width="93.0dip" android:layout_height="93.0dip" android:layout_centerInParent="true">
+            <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开始考试" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

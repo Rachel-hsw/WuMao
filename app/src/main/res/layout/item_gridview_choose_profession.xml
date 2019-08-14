@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="14.0sp" android:textColor="#ff999999" android:gravity="center" android:id="@id/text_item_choose_profession_name" android:background="@drawable/choose_major_unclick" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

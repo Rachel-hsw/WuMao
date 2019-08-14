@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff7f8f8" android:padding="@dimen/screen_side" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image_item_bbs_main" android:layout_width="80.0dip" android:layout_height="80.0dip" android:src="@drawable/image_wait_for_loading" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginLeft="@dimen/screen_side" android:layout_toRightOf="@id/image_item_bbs_main">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17.0sp" android:textColor="#ff333333" android:id="@id/text_item_bbs_main_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/screen_side" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1.0" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/activity_color" android:id="@id/text_item_bbs_main_follow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        </LinearLayout>
+        <TextView android:textSize="15.0sp" android:textColor="#ff999999" android:id="@id/text_item_bbs_main_content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="3.0dip" android:layout_weight="1.0" android:lineSpacingExtra="@dimen/text_line" />
+        <TextView android:textSize="13.0sp" android:textColor="#ffcccccc" android:gravity="right" android:id="@id/text_item_bbs_main_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" />
+    </LinearLayout>
+</RelativeLayout>

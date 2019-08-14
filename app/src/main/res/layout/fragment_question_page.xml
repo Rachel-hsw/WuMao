@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:f="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:app1="http://schemas.android.com/apk/res/com.withustudy.koudaizikao">
+    <ScrollView android:background="#fff6f6f6" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/k_rl_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="10.0dip">
+                <TextView android:textSize="17.0sp" android:textColor="#ff00b8e6" android:gravity="center" android:id="@id/text_knowlege_point_chapter_count" android:layout_width="50.0dip" android:layout_height="30.0dip" android:text="3.1.1" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="17.0sp" android:textColor="#ff666666" android:id="@id/text_knowlege_point_name1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:text="洋务运动的主要领导力量" android:layout_toRightOf="@id/text_knowlege_point_chapter_count" android:layout_centerVertical="true" />
+                <ImageButton android:id="@id/text_knowlege_point_pull_down_t" android:background="@drawable/k_down" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/iv_sj" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_marginBottom="12.0dip" android:contentDescription="@string/app_name" />
+                    <RelativeLayout android:id="@id/rl_sj" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="15.0dip">
+                        <TextView android:textSize="18.0sp" android:textColor="#ffff9700" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/knowlege_point_level" android:drawableLeft="@drawable/k_master" android:drawablePadding="5.0dip" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <LinearLayout android:id="@id/ll_sj" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+                        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_k_label" android:background="@drawable/bg_k_label_selector" android:layout_width="50.0dip" android:layout_height="20.0dip" android:layout_marginLeft="35.0dip" android:layout_marginBottom="20.0dip" android:text="熟记" />
+                    </LinearLayout>
+                    <ImageView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="12.0dip" android:layout_marginBottom="15.0dip" android:contentDescription="@string/app_name" />
+                    <TextView android:textSize="18.0sp" android:textColor="#ff59bd03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="知识点讲解" android:drawableLeft="@drawable/k_explain" android:drawablePadding="5.0dip" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/k_yuyin_ll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+                        <RelativeLayout android:background="@drawable/k_yuyin_bg" android:visibility="gone" android:layout_width="150.0dip" android:layout_height="35.0dip" android:layout_marginLeft="30.0dip">
+                            <ImageButton android:id="@id/play_yuyin" android:background="@drawable/k_yuyin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="2.0dip" />
+                        </RelativeLayout>
+                        <TextView android:id="@id/tv_yuyin_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="60''" />
+                    </LinearLayout>
+                    <com.example.test.FlowLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/fl_point" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" app:layoutDirection="ltr" app:debugDraw="true" app:weightDefault="0.5" />
+                    <TextView android:textColor="#ff666666" android:id="@id/k_jiangjie_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="10.0dip" android:text="" />
+                    <ImageView android:background="@color/white" android:paddingTop="12.0dip" android:layout_width="fill_parent" android:layout_height="12.0dip" android:layout_marginBottom="15.0dip" android:contentDescription="@string/app_name" />
+                    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff59bd03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="统计" android:drawableLeft="@drawable/k_tongji_press" android:drawablePadding="5.0dip" />
+                    <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+                        <RelativeLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                                <TextView android:textSize="15.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="错误率" />
+                                <TextView android:textSize="30.0sp" android:textColor="#ff35b601" android:id="@id/k_tv_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="15.5%" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <RelativeLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                                <TextView android:textSize="15.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的错误率" />
+                                <TextView android:textSize="30.0sp" android:textColor="#ffe20606" android:id="@id/k_my_tv_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="100%" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <RelativeLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                                <TextView android:textSize="15.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="19.0dip" android:text="知识点掌握" />
+                                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                                    <ImageView android:id="@id/iv_level_a" android:background="@drawable/no_master" android:layout_width="18.5dip" android:layout_height="17.5dip" />
+                                    <ImageView android:id="@id/iv_level_b" android:background="@drawable/no_master" android:layout_width="18.5dip" android:layout_height="17.5dip" android:layout_marginLeft="2.0dip" />
+                                    <ImageView android:id="@id/iv_level_c" android:background="@drawable/no_master" android:layout_width="18.5dip" android:layout_height="17.5dip" android:layout_marginLeft="2.0dip" />
+                                    <ImageView android:id="@id/iv_level_d" android:background="@drawable/no_master" android:layout_width="18.5dip" android:layout_height="17.5dip" android:layout_marginLeft="2.0dip" />
+                                    <ImageView android:id="@id/iv_level_e" android:background="@drawable/no_master" android:visibility="visible" android:layout_width="18.5dip" android:layout_height="17.5dip" android:layout_marginLeft="2.0dip" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:layout_centerInParent="true">
+                            <Button android:textColor="@color/white" android:background="@drawable/bg_btn_reset_excercise" android:padding="5.0dip" android:visibility="gone" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="真题练练手" />
+                            <Button android:textColor="@color/white" android:id="@id/btn_again_excercise" android:background="@drawable/bg_btn_goon_excercise" android:padding="5.0dip" android:layout_width="218.0dip" android:layout_height="34.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="30.0dip" android:text="来一发练习题" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/up_view_ll" android:background="#00000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ListView android:id="@id/up_lv" android:background="#ff033db8" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="200.0dip" android:divider="@null" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/up_dis_ll" android:background="#884a4a4a" android:layout_width="fill_parent" android:layout_height="400.0dip" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

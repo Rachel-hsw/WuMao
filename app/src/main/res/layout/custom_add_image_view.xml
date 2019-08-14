@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image_custom_add_image" android:background="@drawable/bt_grid_add" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+    <ImageView android:id="@id/image_custom_add_image_delete" android:background="@drawable/bt_grid_cancel" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@string/app_name" />
+</RelativeLayout>

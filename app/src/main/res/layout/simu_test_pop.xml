@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/simu_detail_pop_diss_ll" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="4.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_alignParentBottom="true">
+            <ImageView android:background="@drawable/moni_pop" android:layout_width="120.0dip" android:layout_height="120.0dip" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="想好了要交卷了吗？" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.5">
+        <LinearLayout android:orientation="horizontal" android:background="#fff6f6f6" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <TextView android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已答:" />
+                    <TextView android:textSize="18.0dip" android:textColor="#ff666666" android:id="@id/tv_have_done" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="6道" />
+                </LinearLayout>
+            </RelativeLayout>
+            <ImageView android:background="#ffd6d6d6" android:layout_width="3.0px" android:layout_height="fill_parent" />
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerInParent="true">
+                    <TextView android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="未答:" />
+                    <TextView android:textSize="18.0dip" android:textColor="#ff666666" android:id="@id/tv_no_done" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="0道" />
+                </LinearLayout>
+            </RelativeLayout>
+            <ImageView android:background="#ffd6d6d6" android:layout_width="3.0px" android:layout_height="fill_parent" />
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <TextView android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="耗时:" />
+                    <TextView android:textSize="18.0dip" android:textColor="#ff666666" android:id="@id/yongshi_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="5分24秒" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:textSize="11.0sp" android:textColor="@color/white" android:id="@id/go_on_test_btn" android:background="@drawable/bg_btn_reset_excercise" android:layout_width="92.0dip" android:layout_height="28.0dip" android:text="继续答题" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:textSize="11.0sp" android:textColor="@color/white" android:id="@id/anser_paper_btn" android:background="@drawable/bg_btn_testcard" android:layout_width="92.0dip" android:layout_height="28.0dip" android:layout_marginLeft="10.0dip" android:text="答题卡" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:textSize="11.0sp" android:textColor="@color/white" android:id="@id/go_last_brush_btn" android:background="@drawable/bg_btn_handcard" android:layout_width="92.0dip" android:layout_height="28.0dip" android:text="果断交卷" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

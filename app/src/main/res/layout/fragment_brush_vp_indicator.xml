@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:zhy="http://schemas.android.com/apk/res/com.withustudy.koudaizikao">
+    <LinearLayout android:gravity="center" android:background="@color/activity_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_title" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="@dimen/activity_title" android:text="口袋自考" />
+    </LinearLayout>
+    <com.withustudy.koudaizikao.custom.ViewPagerIndicator android:orientation="horizontal" android:id="@id/id_indicator" android:background="#fff1f1f1" android:layout_width="fill_parent" android:layout_height="45.0dip" zhy:item_count="2" />
+    <android.support.v4.view.ViewPager android:id="@id/id_vp" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

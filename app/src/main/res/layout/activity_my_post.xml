@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ptr="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/activity_color" android:layout_width="fill_parent" android:layout_height="@dimen/activity_title">
+        <Button android:id="@id/button_my_post_back" android:background="@null" android:layout_width="40.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_side" android:drawableLeft="@drawable/bt_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_title" android:textColor="#ffffffff" android:id="@id/text_my_post_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/listview_my_post" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" ptr:ptrHeaderBackground="#ffffffff" ptr:ptrHeaderTextColor="#ff999999" ptr:ptrDrawable="@drawable/pull_to_fresh" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_my_post_none" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0" />
+            <ImageView android:layout_width="155.0dip" android:layout_height="155.0dip" android:src="@drawable/load_nothing" android:contentDescription="@string/app_name" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="还米有任何帖子哦。。。" />
+            <TextView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="4.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

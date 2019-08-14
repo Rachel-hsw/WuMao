@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/layout_main_fragment_content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <ImageView android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:contentDescription="@string/app_name" />
+    <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/brush_ll" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/brush_iv" android:background="@drawable/tab_main1_un_click" android:layout_width="22.0dip" android:layout_height="17.0dip" android:scaleType="centerInside" android:contentDescription="@string/app_name" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:id="@id/text_main_tab1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/main_tab1" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/news_ll" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/news_iv" android:background="@drawable/tab_main2_un_click" android:layout_width="15.0dip" android:layout_height="17.0dip" android:scaleType="centerInside" android:contentDescription="@string/app_name" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:id="@id/text_main_tab2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/main_tab2" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/bbs_ll" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/bbs_iv" android:background="@drawable/tab_main3_un_click" android:layout_width="13.0dip" android:layout_height="17.0dip" android:scaleType="centerInside" android:contentDescription="@string/app_name" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:id="@id/text_main_tab3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/main_tab4" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/myself_ll" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/myself_iv" android:background="@drawable/tab_main4_un_click" android:layout_width="13.0dip" android:layout_height="17.0dip" android:scaleType="centerInside" android:contentDescription="@string/app_name" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:id="@id/text_main_tab4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/main_tab3" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

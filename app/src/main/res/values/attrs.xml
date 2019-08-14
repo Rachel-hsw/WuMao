@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="ptrRefreshableViewBackground" format="reference|color" />
+    <attr name="ptrHeaderBackground" format="reference|color" />
+    <attr name="ptrHeaderTextColor" format="reference|color" />
+    <attr name="ptrHeaderSubTextColor" format="reference|color" />
+    <attr name="ptrMode">
+        <flag name="both" value="0x00000003" />
+        <flag name="disabled" value="0x00000000" />
+        <flag name="manualOnly" value="0x00000004" />
+        <flag name="pullDownFromTop" value="0x00000001" />
+        <flag name="pullFromEnd" value="0x00000002" />
+        <flag name="pullFromStart" value="0x00000001" />
+        <flag name="pullUpFromBottom" value="0x00000002" />
+    </attr>
+    <attr name="ptrShowIndicator" format="reference|boolean" />
+    <attr name="ptrDrawable" format="reference" />
+    <attr name="ptrDrawableStart" format="reference" />
+    <attr name="ptrDrawableEnd" format="reference" />
+    <attr name="ptrOverScroll" format="reference|boolean" />
+    <attr name="ptrHeaderTextAppearance" format="reference" />
+    <attr name="ptrSubHeaderTextAppearance" format="reference" />
+    <attr name="ptrAnimationStyle">
+        <flag name="flip" value="0x00000001" />
+        <flag name="rotate" value="0x00000000" />
+    </attr>
+    <attr name="ptrScrollingWhileRefreshingEnabled" format="reference|boolean" />
+    <attr name="ptrListViewExtrasEnabled" format="reference|boolean" />
+    <attr name="ptrRotateDrawableWhilePulling" format="reference|boolean" />
+    <attr name="ptrAdapterViewBackground" format="reference|color" />
+    <attr name="ptrDrawableTop" format="reference" />
+    <attr name="ptrDrawableBottom" format="reference" />
+    <attr name="item_count" format="integer" />
+    <attr name="borderRadius" format="dimension" />
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+    <attr name="layoutDirection">
+        <enum name="ltr" value="0" />
+        <enum name="rtl" value="1" />
+    </attr>
+    <attr name="debugDraw" format="boolean" />
+    <attr name="weightDefault" format="float" />
+    <attr name="layout_newLine" format="boolean" />
+    <attr name="layout_weight" format="float" />
+    <attr name="fe_size" format="float" />
+    <attr name="fe_foregroundColor" format="color" />
+    <attr name="fe_backgroundColor" format="color" />
+    <attr name="fe_text" format="string" />
+    <attr name="fe_type">
+        <flag name="bold" value="0x00000002" />
+        <flag name="italic" value="0x00000004" />
+        <flag name="roman" value="0x00000008" />
+        <flag name="sansserif" value="0x00000001" />
+        <flag name="serif" value="0x00000000" />
+        <flag name="typewriter" value="0x00000010" />
+    </attr>
+    <attr name="lv_latexText" format="string" />
+    <attr name="lv_size" format="float" />
+    <attr name="lv_style">
+        <enum name="display" value="0" />
+        <enum name="script" value="4" />
+        <enum name="script_script" value="6" />
+        <enum name="text" value="2" />
+    </attr>
+    <attr name="lv_type">
+        <flag name="bold" value="0x00000002" />
+        <flag name="italic" value="0x00000004" />
+        <flag name="roman" value="0x00000008" />
+        <flag name="sansserif" value="0x00000001" />
+        <flag name="serif" value="0x00000000" />
+        <flag name="typewriter" value="0x00000010" />
+    </attr>
+    <attr name="lv_foregroundColor" format="color" />
+    <attr name="lv_backgroundColor" format="color" />
+    <attr name="cpbWholeBackgroundColor" format="reference|color" />
+    <attr name="cpbForegroundColor" format="reference|color" />
+    <attr name="cpbBackgroundColor" format="reference|color" />
+    <attr name="cpbProgressTextColor" format="reference|color" />
+    <attr name="cpbStrokeWidth" format="integer" />
+    <attr name="cpbStartAngle" format="integer" />
+    <attr name="cpbNeedAnim" format="boolean" />
+    <attr name="cpbNeedShowText" format="boolean" />
+    <attr name="cpbMaxAngle" format="integer" />
+    <attr name="lpbBackgroundColor" format="reference|color" />
+    <attr name="lpbProgressImage" format="reference" />
+    <attr name="lpbSecondaryProgressImage" format="reference" />
+    <attr name="lpbProgressColor" format="reference|color" />
+    <attr name="lpbProgressTextColor" format="reference|color" />
+    <attr name="lpbNeedShowText" format="boolean" />
+    <attr name="lpbNeedAnim" format="boolean" />
+    <attr name="lpbImageWidth" format="reference|dimension" />
+    <attr name="lpbImageHeight" format="reference|dimension" />
+    <attr name="lpbOrientation">
+        <enum name="horizontal" value="0" />
+        <enum name="vertical" value="1" />
+    </attr>
+    <attr name="direction">
+        <enum name="both" value="2" />
+        <enum name="bottom" value="1" />
+        <enum name="top" value="0" />
+    </attr>
+</resources>

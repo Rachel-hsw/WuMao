@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:ptr="http://schemas.android.com/apk/res-auto">
+    <com.withustudy.koudaizikao.custom.pullrefersh.SwipyRefreshLayout android:id="@id/swipyrefreshlayout_hitory" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" ptr:direction="top">
+        <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/lv_history" android:background="@color/white" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/listview_selector" android:divider="@null" ptr:ptrHeaderBackground="#ffffffff" ptr:ptrHeaderTextColor="#ff999999" ptr:ptrDrawable="@drawable/pull_to_fresh" />
+    </com.withustudy.koudaizikao.custom.pullrefersh.SwipyRefreshLayout>
+</LinearLayout>

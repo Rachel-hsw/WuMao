@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/activity_color" android:layout_width="fill_parent" android:layout_height="@dimen/activity_title">
+        <Button android:id="@id/button_information_type_back" android:background="@null" android:layout_width="40.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_side" android:drawableLeft="@drawable/bt_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_title" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/information_type" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <HorizontalScrollView android:id="@id/scrollview_information_type" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="49.0dip">
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="17.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/text_information_type_daily" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/information_daily" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="17.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/text_information_type_road" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:text="@string/information_road" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="17.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/text_information_type_message" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="@string/information_message" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="17.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/text_information_type_news" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="15.0dip" android:text="@string/information_news" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="17.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/text_information_type_problem" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/information_problem" android:singleLine="true" android:layout_weight="1.0" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    <android.support.v4.view.ViewPager android:id="@id/viewpager_infomation_type" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

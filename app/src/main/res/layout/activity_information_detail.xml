@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/activity_color" android:layout_width="fill_parent" android:layout_height="@dimen/activity_title">
+        <Button android:id="@id/button_information_detail_back" android:background="@null" android:layout_width="25.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_side" android:drawableLeft="@drawable/bt_back" />
+        <TextView android:textSize="@dimen/text_title" android:textColor="#ffffffff" android:gravity="center|left" android:id="@id/text_information_detail_type_title" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:id="@id/text_information_detail_discuss" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <Button android:id="@id/button_information_detail_collect" android:background="@drawable/bt_un_collect" android:layout_width="21.0dip" android:layout_height="21.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+        <Button android:id="@id/button_information_detail_share" android:background="@drawable/bt_share" android:layout_width="21.0dip" android:layout_height="21.0dip" android:layout_marginRight="@dimen/screen_side" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.withustudy.koudaizikao.custom.LoadingView android:id="@id/loading_information_detail" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ScrollView android:id="@id/scrollview_information_detail" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:id="@id/text_information_detail_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_side" android:layout_marginTop="27.0dip" android:layout_marginRight="@dimen/screen_side" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ffcccccc" android:id="@id/text_information_detail_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_side" android:layout_marginTop="12.0dip" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/layout_information_detail_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_side" android:layout_marginTop="22.0dip" android:layout_marginRight="@dimen/screen_side" />
+                </LinearLayout>
+                <FrameLayout android:id="@id/layout_information_detail_share" android:background="#ffffffff" android:padding="@dimen/screen_side" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:background="@drawable/info_detail_share" android:layout_width="fill_parent" android:layout_height="164.0dip">
+                        <TextView android:textSize="17.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginTop="18.0dip" android:text="@string/information_detail_share" />
+                        <ImageView android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="11.0dip" android:layout_marginTop="@dimen/screen_side" android:layout_marginRight="11.0dip" android:contentDescription="@string/app_name" />
+                        <LinearLayout android:orientation="horizontal" android:paddingLeft="36.0dip" android:paddingTop="35.0dip" android:paddingRight="36.0dip" android:paddingBottom="35.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:id="@id/image_information_detail_share_weixin" android:background="@drawable/login_weixin" android:layout_width="36.0dip" android:layout_height="30.0dip" android:contentDescription="@string/app_name" />
+                            <TextView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                            <ImageView android:id="@id/image_information_detail_share_friend" android:background="@drawable/login_friend" android:layout_width="30.0dip" android:layout_height="30.0dip" android:contentDescription="@string/app_name" />
+                            <TextView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                            <ImageView android:id="@id/image_information_detail_share_qq" android:background="@drawable/login_qq" android:layout_width="29.0dip" android:layout_height="30.0dip" android:contentDescription="@string/app_name" />
+                            <TextView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                            <ImageView android:id="@id/image_information_detail_share_weibo" android:background="@drawable/login_weibo" android:layout_width="38.0dip" android:layout_height="30.0dip" android:contentDescription="@string/app_name" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout android:id="@id/layout_information_detail_discuss" android:background="#ffffffff" android:padding="@dimen/screen_side" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <LinearLayout android:orientation="vertical" android:background="@drawable/info_detail_list" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="17.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginTop="@dimen/screen_side" android:layout_marginBottom="@dimen/screen_side" android:text="@string/information_detail_hot_discuss" />
+                        <ImageView android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="11.0dip" android:layout_marginRight="11.0dip" android:contentDescription="@string/app_name" />
+                        <com.withustudy.koudaizikao.custom.AdaptiveListView android:id="@id/listview_information_detail" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0px" android:layout_marginRight="2.0px" android:divider="@null" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+    <ImageView android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:contentDescription="@string/app_name" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_information_detail_edit" android:background="#ffffffff" android:paddingTop="13.0dip" android:paddingBottom="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/button_information_detail_dianzan" android:background="@drawable/dianzan_default" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="28.0dip" android:layout_marginLeft="@dimen/screen_side" />
+        <EditText android:textSize="15.0sp" android:textColor="#ff666666" android:textColorHint="#ffcccccc" android:ellipsize="end" android:id="@id/edit_information_detail_discuss" android:background="@drawable/edit_info_input" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="0.0dip" android:layout_height="34.0dip" android:layout_marginLeft="@dimen/screen_side" android:hint="@string/information_detail_discuss_content" android:singleLine="true" android:layout_weight="1.0" />
+        <Button android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/button_information_detail_discuss" android:background="@drawable/bt_bbs_publish_reply" android:layout_width="47.0dip" android:layout_height="33.0dip" android:layout_marginLeft="@dimen/screen_side" android:layout_marginRight="@dimen/screen_side" android:text="@string/bbs_publish" />
+    </LinearLayout>
+</LinearLayout>

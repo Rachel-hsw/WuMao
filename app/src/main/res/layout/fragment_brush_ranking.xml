@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:ptr="http://schemas.android.com/apk/res-auto">
+    <com.withustudy.koudaizikao.custom.pullrefersh.SwipyRefreshLayout android:id="@id/swipyrefreshlayout_rank" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" ptr:direction="top">
+        <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/lv_rank" android:background="@color/white" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" ptr:ptrHeaderBackground="#ffffffff" ptr:ptrHeaderTextColor="#ff999999" ptr:ptrDrawable="@drawable/pull_to_fresh" />
+    </com.withustudy.koudaizikao.custom.pullrefersh.SwipyRefreshLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_bottom" android:background="#fff7f8f8" android:paddingTop="5.0dip" android:paddingRight="15.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="74.5dip">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip">
+            <ImageView android:id="@id/image_brush_rank_my_avatar" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/image_wait_for_loading" android:contentDescription="@string/app_name" />
+            <TextView android:textSize="13.0sp" android:textColor="#ff828081" android:id="@id/text_brush_rank_my_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="口袋自考" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="15.0sp" android:textColor="#ff828081" android:id="@id/text_brush_rank_find_me" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:text="找找我在哪儿？" />
+        </LinearLayout>
+        <Button android:id="@id/button_brush_rank_share" android:background="@drawable/bt_share_blue" android:layout_width="21.0dip" android:layout_height="21.0dip" android:layout_marginRight="@dimen/screen_side" />
+    </LinearLayout>
+</LinearLayout>

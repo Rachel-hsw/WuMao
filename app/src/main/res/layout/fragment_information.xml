@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_title" android:textColor="#ffffffff" android:gravity="center" android:background="@color/activity_color" android:layout_width="fill_parent" android:layout_height="@dimen/activity_title" android:text="@string/information_title" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.withustudy.koudaizikao.custom.LoadingView android:id="@id/loading_information_main" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ScrollView android:id="@id/scroll_information_main" android:background="#ffffffff" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/image_information_main_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/test_illustration" android:scaleType="fitXY" android:contentDescription="@string/app_name" />
+                    <com.withustudy.koudaizikao.custom.AotuViewPager android:id="@id/viewpager_information_main" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </FrameLayout>
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="12.0dip" android:paddingTop="20.0dip" android:paddingRight="12.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_information_daily" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <ImageView android:layout_width="43.0dip" android:layout_height="43.0dip" android:src="@drawable/bg_information_daily" android:contentDescription="@string/app_name" />
+                        <TextView android:textSize="13.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/information_daily" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_information_road" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <ImageView android:layout_width="43.0dip" android:layout_height="43.0dip" android:src="@drawable/bg_information_road" android:contentDescription="@string/app_name" />
+                        <TextView android:textSize="13.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/information_road" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_information_message" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <ImageView android:layout_width="43.0dip" android:layout_height="43.0dip" android:src="@drawable/bg_information_message" android:contentDescription="@string/app_name" />
+                        <TextView android:textSize="13.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/information_message" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_information_news" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <ImageView android:layout_width="43.0dip" android:layout_height="43.0dip" android:src="@drawable/bg_information_news" android:contentDescription="@string/app_name" />
+                        <TextView android:textSize="13.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/information_news" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_information_problems" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <ImageView android:layout_width="43.0dip" android:layout_height="43.0dip" android:src="@drawable/bg_information_problem" android:contentDescription="@string/app_name" />
+                        <TextView android:textSize="13.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/information_problem" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="#fff7f8f8" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip">
+                        <ImageView android:background="@drawable/icon_daily" android:layout_width="18.0dip" android:layout_height="16.0dip" android:layout_marginLeft="@dimen/screen_side" android:contentDescription="@string/app_name" />
+                        <TextView android:textSize="16.0sp" android:textColor="#ff24b5a4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="@string/information_daily" />
+                        <TextView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                        <ImageView android:id="@id/image_information_daily_praise" android:background="@drawable/bt_praise_un_small" android:layout_width="17.0dip" android:layout_height="16.0dip" android:contentDescription="@string/app_name" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:gravity="center_vertical" android:id="@id/text_information_praise" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" />
+                        <ImageView android:id="@id/image_information_daily_share" android:background="@drawable/bt_share_small" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="10.0dip" android:contentDescription="@string/app_name" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/text_information_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="10.0dip" />
+                    </LinearLayout>
+                    <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:id="@id/text_information_daily_content" android:paddingLeft="10.0dip" android:paddingTop="11.0dip" android:paddingRight="10.0dip" android:paddingBottom="11.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="6.0dip" />
+                </LinearLayout>
+                <com.withustudy.koudaizikao.custom.AdaptiveListView android:id="@id/listview_information_main" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/know_xuxian_w" android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="3.0px" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/chapter_section_list_item_t" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.6">
+            <TextView android:textSize="13.0sp" android:textColor="#ff00b8e6" android:gravity="center" android:id="@id/knowledge_number_tv_t" android:background="@drawable/tilte_number_bg" android:layout_width="25.0dip" android:layout_height="25.0dip" android:text="1" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/know_xuxian_iv" android:background="#ffefefef" android:layout_width="3.0px" android:layout_height="22.0dip" android:layout_marginLeft="12.0dip" android:layout_below="@id/knowledge_number_tv_t" android:layout_alignLeft="@id/knowledge_number_tv_t" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="3.0">
+            <TextView android:textSize="16.0sp" android:textColor="#ff3e3a39" android:id="@id/knowledge_item_name_t1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="虎门销烟" />
+            <TextView android:textSize="11.0sp" android:textColor="#ff999999" android:id="@id/knowledge_learn_t" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="共31个知识点,已学习15个知识点" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageButton android:id="@id/knowledge_collect_ib_t" android:background="@drawable/know_jiangtou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/knowledge_list_ll_t" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

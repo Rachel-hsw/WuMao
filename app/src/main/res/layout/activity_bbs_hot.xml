@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/activity_color" android:layout_width="fill_parent" android:layout_height="@dimen/activity_title">
+        <Button android:id="@id/button_bbs_hot_back" android:background="@null" android:layout_width="40.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_side" android:drawableLeft="@drawable/bt_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_title" android:textColor="#ffffffff" android:id="@id/text_bbs_hot_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bbs_hot_sections" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.withustudy.koudaizikao.custom.LoadingView android:id="@id/loading_bbs_hot" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ListView android:id="@id/listview_bbs_hot" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="#ffffffff" android:dividerHeight="@dimen/screen_side" />
+    </FrameLayout>
+</LinearLayout>

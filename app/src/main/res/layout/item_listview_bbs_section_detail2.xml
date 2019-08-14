@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:paddingLeft="@dimen/screen_side" android:paddingTop="@dimen/screen_side" android:paddingRight="@dimen/screen_side" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#fff7f8f8" android:padding="@dimen/screen_side" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/image_item_bbs_section_detail2_avatar" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/image_avatar_wait_for_load" android:contentDescription="@string/app_name" />
+            <TextView android:textSize="17.0sp" android:textColor="@color/activity_color" android:id="@id/text_item_bbs_section_detail2_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_side" android:layout_toRightOf="@id/image_item_bbs_section_detail2_avatar" android:layout_alignParentTop="true" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffcccccc" android:id="@id/text_item_bbs_section_detail2_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_side" android:layout_toRightOf="@id/image_item_bbs_section_detail2_avatar" android:layout_below="@id/text_item_bbs_section_detail2_name" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/text_item_bbs_section_detail2_elite" android:background="@color/activity_color" android:paddingLeft="5.0dip" android:paddingTop="3.0dip" android:paddingRight="5.0dip" android:paddingBottom="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bbs_section_elite" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <TextView android:textSize="17.0sp" android:textColor="#ff333333" android:id="@id/text_item_bbs_section_detail2_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:singleLine="true" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:id="@id/text_item_bbs_section_detail2_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:lineSpacingExtra="@dimen/text_line" />
+        <TableLayout android:id="@id/table_item_bbs_section_detail2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/layout_item_bbs_section_detail2_top" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <ImageView android:id="@id/image_item_bbs_section_detail2_1" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_weight="1.0" android:contentDescription="@string/app_name" />
+                <ImageView android:id="@id/image_item_bbs_section_detail2_2" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:scaleType="centerCrop" android:layout_weight="1.0" android:contentDescription="@string/app_name" />
+                <ImageView android:id="@id/image_item_bbs_section_detail2_3" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_weight="1.0" android:contentDescription="@string/app_name" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/layout_item_bbs_section_detail2_mid" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:layout_weight="1.0">
+                <ImageView android:id="@id/image_item_bbs_section_detail2_4" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_weight="1.0" android:contentDescription="@string/app_name" />
+                <ImageView android:id="@id/image_item_bbs_section_detail2_5" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:scaleType="centerCrop" android:layout_weight="1.0" android:contentDescription="@string/app_name" />
+                <ImageView android:id="@id/image_item_bbs_section_detail2_6" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_weight="1.0" android:contentDescription="@string/app_name" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/layout_item_bbs_section_detail2_end" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <ImageView android:id="@id/image_item_bbs_section_detail2_7" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_weight="1.0" android:contentDescription="@string/app_name" />
+                <ImageView android:id="@id/image_item_bbs_section_detail2_8" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:scaleType="centerCrop" android:layout_weight="1.0" android:contentDescription="@string/app_name" />
+                <ImageView android:id="@id/image_item_bbs_section_detail2_9" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_weight="1.0" android:contentDescription="@string/app_name" />
+            </LinearLayout>
+        </TableLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textColor="#ffcccccc" android:id="@id/text_item_bbs_section_detail2_area" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <ImageView android:layout_width="16.0dip" android:layout_height="17.0dip" android:src="@drawable/bbs_bt_praise_small" android:contentDescription="@string/app_name" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff999999" android:id="@id/text_item_bbs_section_detail2_praise" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+            <ImageView android:layout_width="15.0dip" android:layout_height="16.0dip" android:layout_marginLeft="15.0dip" android:src="@drawable/bbs_section_reply_count" android:contentDescription="@string/app_name" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff999999" android:id="@id/text_item_bbs_section_detail2_discuss" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

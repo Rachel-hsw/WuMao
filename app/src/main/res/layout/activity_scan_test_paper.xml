@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@null" android:layout_width="fill_parent" android:layout_height="@dimen/activity_title" />
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="30.0dip">
+        <ImageButton android:id="@id/dismiss_test_card_ib" android:background="@drawable/simu_test_down" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已答:" />
+        <TextView android:textColor="#ff259b24" android:id="@id/tv_havedone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="6道" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="未答:" />
+        <TextView android:textColor="#ff259b24" android:id="@id/tv_nodone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="94道" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="耗时:" />
+        <TextView android:textColor="#ff555555" android:id="@id/pre_yongshi_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5分24秒" />
+    </LinearLayout>
+    <GridView android:layout_gravity="center" android:id="@id/simu_card_gv1" android:scrollbars="none" android:clickable="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="10.0dip" android:horizontalSpacing="5.0dip" android:verticalSpacing="20.0dip" android:numColumns="5" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:textColor="@color/white" android:id="@id/go_first_brush_btn_pop" android:background="@drawable/bg_btn_reset_excercise" android:layout_width="80.0dip" android:layout_height="25.0dip" android:text="继续答题" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:textColor="@color/white" android:id="@id/go_last_brush_btn_pop" android:background="@drawable/bg_btn_goon_excercise" android:layout_width="80.0dip" android:layout_height="25.0dip" android:layout_marginLeft="5.0dip" android:text="完成并分享" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

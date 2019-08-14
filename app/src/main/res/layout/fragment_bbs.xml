@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ptr="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/activity_color" android:layout_width="fill_parent" android:layout_height="@dimen/activity_title">
+        <TextView android:textSize="@dimen/text_title" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bbs_title" android:layout_centerInParent="true" />
+        <Button android:id="@id/button_bbs_main_all" android:background="@drawable/bt_bbs_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/screen_side" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_bbs_hot_post" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="67.0dip">
+            <ImageView android:background="@drawable/hot_post" android:layout_width="45.0dip" android:layout_height="45.0dip" android:contentDescription="@string/app_name" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="@string/bbs_hot_post" android:includeFontPadding="false" />
+        </LinearLayout>
+        <TextView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_bbs_hot_sections" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="67.0dip">
+            <ImageView android:background="@drawable/hot_section" android:layout_width="45.0dip" android:layout_height="45.0dip" android:contentDescription="@string/app_name" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="@string/bbs_hot_sections" android:includeFontPadding="false" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="17.0sp" android:textColor="#ff333333" android:gravity="center" android:background="#fff7f8f8" android:layout_width="fill_parent" android:layout_height="38.0dip" android:text="我的版块" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/listview_bbs_main" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip" android:divider="#ffffffff" android:dividerHeight="@dimen/screen_side" ptr:ptrHeaderBackground="#ffffffff" ptr:ptrHeaderTextColor="#ff999999" ptr:ptrDrawable="@drawable/pull_to_fresh" />
+        <com.withustudy.koudaizikao.custom.LoadingView android:id="@id/loading_bbs_main" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/excercise_detail_item_ll" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="12.0sp" android:id="@id/stem_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="洋务运动的领导人是谁?" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/activity_color" android:id="@id/check_type_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="[单选]" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:id="@id/label_old_excercise_tv" android:background="@drawable/bg_border_corners__excercise_label1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="真题" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:id="@id/label_pre_excercise_tv" android:background="@drawable/bg_border_corners__excercise_label2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="预测" />
+    </LinearLayout>
+    <com.withustudy.koudaizikao.custom.OptionView android:id="@id/simu_excercise_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" />
+</LinearLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.withustudy.koudaizikao" platformBuildVersionCode="21" platformBuildVersionName="5.0.1-1624448">
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="getui.permission.GetuiService.com.withustudy.koudaizikao"/>
+    <permission android:name="getui.permission.GetuiService.com.withustudy.koudaizikao" android:protectionLevel="normal"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application android:allowBackup="true" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.withustudy.koudaizikao.MyApplication" android:theme="@style/AppBaseTheme">
+        <activity android:label="@string/app_name" android:name="com.withustudy.koudaizikao.activity.WelcomeActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.withustudy.koudaizikao.activity.GuideActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.MainActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.SkipActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.InformationDetailActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.UpdateNewActivity" android:screenOrientation="portrait" android:theme="@style/activity_dialog"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.UpdateNoneActivity" android:screenOrientation="portrait" android:theme="@style/activity_dialog"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.LoginActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.QuestionDetailActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.QuestionDiscussActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.ChapterSectionListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.KnowledgePointDetailActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.BrushRankingActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.KnowledgeExplainActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.SimulationInitActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.SimulationDetailActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.FavoriteActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.TestCardActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.SimulationHistoryActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.SuggestionActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.ChooseProfessionActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.ChooseSubjectActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.test.TestActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.BbsHotActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.SectionDetailActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.PostDetailActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.ShowPictureActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.AddPostActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.InformationTypeActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.QuestionMoreComentActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.ShowCardActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.AllSectionActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.MyPostActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.PersonalSetActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.SetNickNameActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.SetPasswordActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.AboutActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.CodeActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.ActivityErrorListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.IntellWecomeActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.ActivitySimuResult" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.SimuHistoryActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.SimuHistoryListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.ActivityCollectSubject" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.ReSetPasswordActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.ActivityScanTestPaper" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.ActivityErrorWecome" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.ActivityTest" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.BindPhoneActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.ActivityOldExamList" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.withustudy.koudaizikao.activity.VideoWebViewActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <service android:name="com.withustudy.koudaizikao.service.PushExcerciseService" android:process=":message"/>
+        <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="04FsPD8HBqKSKyySYnAOEnjH"/>
+        <meta-data android:name="PUSH_APPID" android:value="hZDj1lBJehA2BWN1ht5Wp"/>
+        <meta-data android:name="PUSH_APPKEY" android:value="btWcHoswWV8RSCsxHZmru1"/>
+        <meta-data android:name="PUSH_APPSECRET" android:value="Tu2f7yH2T16Mfb7qoCHr81"/>
+        <receiver android:exported="false" android:name="com.withustudy.koudaizikao.receiver.PushDemoReceiver">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.hZDj1lBJehA2BWN1ht5Wp"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:label="NotificationCenter" android:name="com.igexin.sdk.PushService" android:process=":pushservice"/>
+        <service android:exported="true" android:label="NotificationCenterUser" android:name="com.igexin.sdk.PushServiceUser"/>
+        <receiver android:name="com.igexin.sdk.PushReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="com.igexin.sdk.action.refreshls"/>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.igexin.sdk.PushManagerReceiver">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.pushmanager"/>
+            </intent-filter>
+        </receiver>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.igexin.sdk.PushActivity" android:process=":pushservice" android:taskAffinity="com.igexin.sdk.PushActivityTask" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:name="com.igexin.download.DownloadService" android:process=":pushservice"/>
+        <receiver android:name="com.igexin.download.DownloadReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="downloads.com.withustudy.koudaizikao" android:exported="true" android:name="com.igexin.download.DownloadProvider" android:process=":pushservice"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:excludeFromRecents="true" android:exported="false" android:name="com.igexin.getuiext.activity.GetuiExtActivity" android:process=":pushservice" android:taskAffinity="android.task.myServicetask" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:exported="false" android:name="com.igexin.getuiext.service.PayloadReceiver">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4"/>
+                <action android:name="com.igexin.sdk.action.hZDj1lBJehA2BWN1ht5Wp"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.igexin.getuiext.service.GetuiExtService" android:process=":pushservice"/>
+        <meta-data android:name="UMENG_APPKEY" android:value="55de7cdbe0f55aa1ff0012fa"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="yingyongbao"/>
+        <activity android:configChanges="keyboard|orientation" android:launchMode="singleTask" android:name="com.umeng.socialize.view.ShareActivity" android:noHistory="true" android:theme="@style/Theme.UMDialog" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name=".wxapi.WXEntryActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:launchMode="singleTask" android:name="com.tencent.tauth.AuthActivity" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tencent你的QQ互联APPID"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tencent.connect.common.AssistActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.withustudy.koudaizikao.activity.NotificationActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.withustudy.koudaizikao.activity.ExampleActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:enabled="true" android:name="com.baidu.location.f" android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2"/>
+            </intent-filter>
+        </service>
+    </application>
+</manifest>
